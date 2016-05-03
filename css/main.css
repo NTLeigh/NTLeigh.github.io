@@ -1535,7 +1535,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffaf8a;
+  background: #20ff82;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2169,6 +2169,11 @@ body {
     width: auto;
   }
 }
+.main {
+  background-image: url("/images/2.jpg");
+  background-repeat: non-repeat;
+  background-size: cover;
+}
 .main:before,
 .main:after {
   content: " ";
@@ -2379,7 +2384,7 @@ body {
 }
 .sidebar-inner {
   box-sizing: border-box;
-  width: 480px;
+  width: 240px;
   color: #555;
   background: #fff;
 }
