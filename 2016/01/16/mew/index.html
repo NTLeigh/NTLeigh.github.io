@@ -80,20 +80,19 @@
 
 
 
-<meta name="description" content="So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/">
+<meta name="description" content="So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/M">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Three dimensional medical image rendering">
 <meta property="og:url" content="http://yoursite.com/2016/01/16/mew/index.html">
 <meta property="og:site_name" content="Arcadia">
-<meta property="og:description" content="So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/">
-<meta property="og:image" content="http://www.z4a.net/images/2016/09/17/skull_grey.gif">
+<meta property="og:description" content="So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/M">
 <meta property="og:image" content="http://www.z4a.net/images/2016/09/17/compare.md.png">
 <meta property="og:image" content="http://www.z4a.net/images/2016/09/18/Shear_Wrap.png">
-<meta property="og:updated_time" content="2016-09-18T14:42:51.000Z">
+<meta property="og:updated_time" content="2016-09-18T15:54:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Three dimensional medical image rendering">
-<meta name="twitter:description" content="So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/">
-<meta name="twitter:image" content="http://www.z4a.net/images/2016/09/17/skull_grey.gif">
+<meta name="twitter:description" content="So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/M">
+<meta name="twitter:image" content="http://www.z4a.net/images/2016/09/17/compare.md.png">
 
 
 
@@ -291,8 +290,7 @@
       
 
       
-        <p><img src="http://www.z4a.net/images/2016/09/17/skull_grey.gif" alt="skull_grey.gif"></p>
-<p>So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/MRI images based on Matlab.</p>
+        <p>So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/MRI images based on Matlab.</p>
 <p><img src="http://www.z4a.net/images/2016/09/17/compare.md.png" alt="compare.md.png"></p>
 <p>Basically in Computer Graphics there are two methods for 3D rendering: <strong><em>Volume Rendering</em></strong> (A) and <strong><em>Surface Rendering</em></strong> (B). These two methods are quite self-explanatory, either to render the entire volume from scanning data or to merely render the surface of the object. Although <strong><em>volume rendering</em></strong> is quite time-consuming and produce relatively large files, it could produce  quite accurate and photorealistic images. In addition, <strong><em>surface rendering</em></strong> casts out all the data within the surface, usually resulting in clinical information loss.<br><a id="more"></a></p>
 <h2 id="Volume-Renderings"><a href="#Volume-Renderings" class="headerlink" title="Volume Renderings"></a>Volume Renderings</h2><p>Volume rendering represents 3D objects as a collection of cube-like building blocks called voxels, or volume elements. There are several ways for rendering,<br>including <strong><em>direct volume rendering</em></strong>, which calculate the exact visual effect according to the given viewing angle and voxel data, and <strong><em>maximun intensity projection</em></strong>, which only present the voxel of highest intensity in the viewing rays.</p>
@@ -301,6 +299,7 @@
 <p>There are loads of DICOM image libraries on the Internet, and I found the DICOM library from <a href="http://www.osirix-viewer.com/resources/dicom-image-library/" target="_blank" rel="external">OsiriX</a> a relatively convenient resource to handle. They have many high-quality datasets of various objects, and most of them are quite attractive (from a anatomical perspective), they even have cats scanned in MRI. (Sadly access of OsiriX from mainland China seemed denied).</p>
 <h3 id="Direct-Volume-Rendering"><a href="#Direct-Volume-Rendering" class="headerlink" title="Direct Volume Rendering"></a>Direct Volume Rendering</h3><p>Basically direct volume rendering is to first reconstruct a dataset that places all the voxel informations in their rightful position, and then according to the given viewing array (the angle that we want to view at the object) calculate the corresponding intensity of voxels that lies within that viewing ray. And I will use the Shear-Wrap Algorithm to demonstrate such process.</p>
 <p><img src="http://www.z4a.net/images/2016/09/18/Shear_Wrap.png" alt="Shear_Wrap.png"></p>
+<p>A normal DICOM dataset will first be loaded into workspace, and reshape into a 3-dimensional array for further process. Then, depending on the viewing array (usually the data of viewing array is decided from mouse operation or defined by users). According to the cross-angle between your viewing rays and your volume, the original DICOM array will now be transform </p>
 <h3 id="Maximun-Intensity-Projection"><a href="#Maximun-Intensity-Projection" class="headerlink" title="Maximun Intensity Projection"></a>Maximun Intensity Projection</h3><h2 id="Surface-Rendering"><a href="#Surface-Rendering" class="headerlink" title="Surface Rendering"></a>Surface Rendering</h2><h3 id="Marching-Cubes"><a href="#Marching-Cubes" class="headerlink" title="Marching Cubes"></a>Marching Cubes</h3>
       
     </div>
