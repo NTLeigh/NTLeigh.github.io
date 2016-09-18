@@ -80,18 +80,19 @@
 
 
 
-<meta name="description" content="So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/M">
+<meta name="description" content="So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Three dimensional medical image rendering">
 <meta property="og:url" content="http://yoursite.com/2015/11/16/mew/index.html">
 <meta property="og:site_name" content="Arcadia">
-<meta property="og:description" content="So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/M">
+<meta property="og:description" content="So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/">
+<meta property="og:image" content="http://www.z4a.net/images/2016/09/17/skull_grey.gif">
 <meta property="og:image" content="http://www.z4a.net/images/2016/09/17/compare.md.png">
-<meta property="og:updated_time" content="2016-09-17T15:34:00.000Z">
+<meta property="og:updated_time" content="2016-09-18T13:25:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Three dimensional medical image rendering">
-<meta name="twitter:description" content="So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/M">
-<meta name="twitter:image" content="http://www.z4a.net/images/2016/09/17/compare.md.png">
+<meta name="twitter:description" content="So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/">
+<meta name="twitter:image" content="http://www.z4a.net/images/2016/09/17/skull_grey.gif">
 
 
 
@@ -289,11 +290,15 @@
       
 
       
-        <p>So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/MRI images based on Matlab.</p>
+        <p><a href="http://www.z4a.net/image/gw6l2" target="_blank" rel="external"><img src="http://www.z4a.net/images/2016/09/17/skull_grey.gif" alt="skull_grey.gif"></a></p>
+<p>So these days I have been working on the course project of Computer Graphics, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/MRI images based on Matlab.</p>
 <p><a href="http://www.z4a.net/image/gwVIE" target="_blank" rel="external"><img src="http://www.z4a.net/images/2016/09/17/compare.md.png" alt="compare.md.png"></a></p>
-<p>Basically in Computer Graphics there are two methods for 3D rendering: <strong><em>Volume Rendering</em></strong> (A) and <strong><em>Surface Rendering</em></strong> (B). These two methods are quite self-explanatory, either to render the entire volume from scanning data or to merely render the surface of the object. Although <strong><em>volume rendering</em></strong> is quite time-consuming and produce relatively large files, it could produce  quite accurate and photorealistic images. In addition, <strong><em>surface rendering</em></strong> casts out all the data within the surface, usually resulting in clinical information loss.</p>
-<h2 id="Volume-Renderings"><a href="#Volume-Renderings" class="headerlink" title="Volume Renderings"></a>Volume Renderings</h2><p>Volume rendering represents 3D objects as a collection of cube-like building blocks called voxels, or volume elements. A typical volume rendering includes the following procedures: data import, volume transform, </p>
-<h3 id="Direct-volume-rendering"><a href="#Direct-volume-rendering" class="headerlink" title="Direct volume rendering"></a>Direct volume rendering</h3><h3 id="Maximun-intensity-projection"><a href="#Maximun-intensity-projection" class="headerlink" title="Maximun intensity projection"></a>Maximun intensity projection</h3><h2 id="Surface-Rendering"><a href="#Surface-Rendering" class="headerlink" title="Surface Rendering"></a>Surface Rendering</h2><h3 id="Marching-Cubes"><a href="#Marching-Cubes" class="headerlink" title="Marching Cubes"></a>Marching Cubes</h3>
+<p>Basically in Computer Graphics there are two methods for 3D rendering: <strong><em>Volume Rendering</em></strong> (A) and <strong><em>Surface Rendering</em></strong> (B). These two methods are quite self-explanatory, either to render the entire volume from scanning data or to merely render the surface of the object. Although <strong><em>volume rendering</em></strong> is quite time-consuming and produce relatively large files, it could produce  quite accurate and photorealistic images. In addition, <strong><em>surface rendering</em></strong> casts out all the data within the surface, usually resulting in clinical information loss.<br><a id="more"></a></p>
+<h2 id="Volume-Renderings"><a href="#Volume-Renderings" class="headerlink" title="Volume Renderings"></a>Volume Renderings</h2><p>Volume rendering represents 3D objects as a collection of cube-like building blocks called voxels, or volume elements. There are several ways for rendering,<br>including <strong><em>direct volume rendering</em></strong>, which calculate the exact visual effect according to the given viewing angle and voxel data, and <strong><em>maximun intensity projection</em></strong>, which only present the voxel of highest intensity in the viewing rays.</p>
+<p>Volume rendering require data that contain information within a defined space, typically the raw scanning data of CT or MRI, which records the anatomical information within certain voxel of the human body.</p>
+<h3 id="MRI-CT-Files-Library"><a href="#MRI-CT-Files-Library" class="headerlink" title="MRI/CT Files Library"></a>MRI/CT Files Library</h3><p>For medical images, <strong>DICOM</strong> (Digital Imaging and Communications in Medicine) is a common standard for image storage, processing and transmitting (yet ususally the original files generated from MRI or CT are not in DICOM standard, how strange).</p>
+<p>There are loads of DICOM image libraries on the Internet, and I found the DICOM library from <a href="http://www.osirix-viewer.com/resources/dicom-image-library/" target="_blank" rel="external">OsiriX</a> a relatively convenient resource to handle.</p>
+<h3 id="Direct-Volume-Rendering"><a href="#Direct-Volume-Rendering" class="headerlink" title="Direct Volume Rendering"></a>Direct Volume Rendering</h3><h3 id="Maximun-Intensity-Projection"><a href="#Maximun-Intensity-Projection" class="headerlink" title="Maximun Intensity Projection"></a>Maximun Intensity Projection</h3><h2 id="Surface-Rendering"><a href="#Surface-Rendering" class="headerlink" title="Surface Rendering"></a>Surface Rendering</h2><h3 id="Marching-Cubes"><a href="#Marching-Cubes" class="headerlink" title="Marching Cubes"></a>Marching Cubes</h3>
       
     </div>
     
@@ -423,7 +428,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Volume-Renderings"><span class="nav-number">1.</span> <span class="nav-text">Volume Renderings</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Direct-volume-rendering"><span class="nav-number">1.1.</span> <span class="nav-text">Direct volume rendering</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Maximun-intensity-projection"><span class="nav-number">1.2.</span> <span class="nav-text">Maximun intensity projection</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Surface-Rendering"><span class="nav-number">2.</span> <span class="nav-text">Surface Rendering</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Marching-Cubes"><span class="nav-number">2.1.</span> <span class="nav-text">Marching Cubes</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Volume-Renderings"><span class="nav-number">1.</span> <span class="nav-text">Volume Renderings</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MRI-CT-Files-Library"><span class="nav-number">1.1.</span> <span class="nav-text">MRI/CT Files Library</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Direct-Volume-Rendering"><span class="nav-number">1.2.</span> <span class="nav-text">Direct Volume Rendering</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Maximun-Intensity-Projection"><span class="nav-number">1.3.</span> <span class="nav-text">Maximun Intensity Projection</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Surface-Rendering"><span class="nav-number">2.</span> <span class="nav-text">Surface Rendering</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Marching-Cubes"><span class="nav-number">2.1.</span> <span class="nav-text">Marching Cubes</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
