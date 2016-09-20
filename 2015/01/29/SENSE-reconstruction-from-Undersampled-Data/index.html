@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Image Processing,MRI," />
 
 
 
@@ -80,15 +80,26 @@
 
 
 
-<meta name="description" content="Dedicated to Delicacy">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Arcadia">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Basically this is my final project of the course Advanced Magnetic Resonance Imaging, and I proposed to reconstruct MRI images from undersampled MRI data in K-Space by the virtue of using multiple s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SENSE reconstruction from Undersampled Data">
+<meta property="og:url" content="http://yoursite.com/2015/01/29/SENSE-reconstruction-from-Undersampled-Data/index.html">
 <meta property="og:site_name" content="Arcadia">
-<meta property="og:description" content="Dedicated to Delicacy">
+<meta property="og:description" content="Basically this is my final project of the course Advanced Magnetic Resonance Imaging, and I proposed to reconstruct MRI images from undersampled MRI data in K-Space by the virtue of using multiple s">
+<meta property="og:image" content="http://www.z4a.net/images/2016/09/20/Half_Sampled.jpg">
+<meta property="og:image" content="http://www.z4a.net/images/2016/09/20/Kspace.jpg">
+<meta property="og:image" content="http://www.z4a.net/images/2016/09/20/unsample.jpg">
+<meta property="og:image" content="http://www.z4a.net/images/2016/09/20/Fully_Sample.jpg">
+<meta property="og:image" content="http://www.z4a.net/images/2016/09/20/Half_Sampled.jpg">
+<meta property="og:image" content="http://www.z4a.net/images/2016/09/20/Third_Sample.jpg">
+<meta property="og:image" content="http://www.z4a.net/images/2016/09/20/sensitivity.jpg">
+<meta property="og:image" content="http://www.z4a.net/images/2016/09/20/result.jpg">
+<meta property="og:image" content="http://www.z4a.net/images/2016/09/20/compare.jpg">
+<meta property="og:updated_time" content="2016-09-20T02:04:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Arcadia">
-<meta name="twitter:description" content="Dedicated to Delicacy">
+<meta name="twitter:title" content="SENSE reconstruction from Undersampled Data">
+<meta name="twitter:description" content="Basically this is my final project of the course Advanced Magnetic Resonance Imaging, and I proposed to reconstruct MRI images from undersampled MRI data in K-Space by the virtue of using multiple s">
+<meta name="twitter:image" content="http://www.z4a.net/images/2016/09/20/Half_Sampled.jpg">
 
 
 
@@ -106,7 +117,7 @@
   };
 </script>
 
-  <title> Arcadia - Dedicated to Delicacy </title>
+  <title> SENSE reconstruction from Undersampled Data | Arcadia </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -127,9 +138,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -226,9 +235,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -248,108 +257,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/01/16/Three dimensional medical image rendering/" itemprop="url">
-                  Three dimensional medical image rendering
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-01-16T16:22:03-06:00" content="2016-01-16">
-              2016-01-16
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>So these days I have been working on the course project of <strong>Computer Graphics</strong>, and a biomedical-related project always seems to be attractive therefore I finally decided to work on 3D-rendering of CT/MRI images based on Matlab.</p>
-<p><img src="http://www.z4a.net/images/2016/09/17/compare.md.png" alt="compare.md.png"></p>
-<p>Basically in Computer Graphics there are two methods for 3D rendering: <strong><em>Volume Rendering</em></strong> (A) and <strong><em>Surface Rendering</em></strong> (B). These two methods are quite self-explanatory, either to render the entire volume from scanning data or to merely render the surface of the object. Although <strong><em>volume rendering</em></strong> is quite time-consuming and produce relatively large files, it could produce  quite accurate and photorealistic images. In addition, <strong><em>surface rendering</em></strong> casts out all the data within the surface, usually resulting in clinical information loss.<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/16/Three dimensional medical image rendering/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/01/29/SENSE-reconstruction-from-Undersampled-Data/" itemprop="url">
-                  SENSE reconstruction from Undersampled Data
-                </a>
+                SENSE reconstruction from Undersampled Data
               
             
           </h1>
@@ -389,47 +297,94 @@
       
 
       
-        
-          <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 <p>Basically this is my final project of the course <strong>Advanced Magnetic Resonance Imaging</strong>, and I proposed to reconstruct MRI images from undersampled MRI data in K-Space by the virtue of using multiple sensing coils. Such idea is previously reported by Pruessmann, and they name it “SENSE (Simultaneous Acquisition of Spatial Harmonics)”</p>
 <h2 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h2><p>In MRI, usually a complete scanning image requires full sampling in K-space. In order to completely record the K-space of an object, suppose the sampling spacing in K-space is \(\Delta K_y\), then the corresponding Field-of-view (FOV) should be as followed:<br>$$FOV=\frac{1}{\Delta K_y}$$</p>
 <p>But if we want to accelerate the MRI scanning process by extending \(\Delta K_y\) by factor \(g\), then now the FOV would be:<br>$$FOV=\frac{1}{g\Delta K_y}$$</p>
 <p>The problem is that the undersampling in K-space would result in severe overlapping after inverse Fourier transform, because now you have a frame reduce by \(g\) yet you continue to scan over the original object in K-space. Therefore you will end up with something like this:<br><img src="http://www.z4a.net/images/2016/09/20/Half_Sampled.jpg" alt="Half_Sampled.jpg"></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/01/29/SENSE-reconstruction-from-Undersampled-Data/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
+<a id="more"></a>
+<p>Luckily we could add some sensing coils around the object when performing MRI to acquire additional local information, and therefore by respectively unravelling the undersampled images of each coils and add up these images as one, the final reconstructed image could still maintain high quality. For the unfolding matrix \(m\) from coils, we have:</p>
+<p>$$m=(C^ *\Psi^{-1}C)^{-1}C\Psi^{-1}m_s(x_p) $$</p>
+<p>where \(C\) is the sensitivity array of all the coils, and \(\Psi\) is the identity matrix for simplicity, and \(m_s\) is the original ravelled image matrix.</p>
+<h2 id="Experimental"><a href="#Experimental" class="headerlink" title="Experimental"></a>Experimental</h2><h3 id="Full-Sampling-and-Undersampling"><a href="#Full-Sampling-and-Undersampling" class="headerlink" title="Full Sampling and Undersampling"></a>Full Sampling and Undersampling</h3><p>The following K-spaces are acquire from a 8 channel 256×256 brain MRI data, and since we are using 8 coils surrounding the brain to record signals, the center of K-space, as we can see, don’t lie in the center of the frame. Therefore we need to extend the frame in order to centralize the K-space center by filling zeros (black regions).</p>
+<p><img src="http://www.z4a.net/images/2016/09/20/Kspace.jpg" alt="Kspace.jpg"></p>
+<p>Then we undersample the K-space by 2 (\(g=2\)), seen as followed.</p>
+<p><img src="http://www.z4a.net/images/2016/09/20/unsample.jpg" alt="unsample.jpg"></p>
+<p>Performing invertive FFT to the K-space and half-sampled K-space, we could derive the following images:</p>
+<p><img src="http://www.z4a.net/images/2016/09/20/Fully_Sample.jpg" alt="Fully_Sample.jpg"><br><img src="http://www.z4a.net/images/2016/09/20/Half_Sampled.jpg" alt="Half_Sampled.jpg"></p>
+<p>At lease two aspects were proved from the figures above:</p>
+<ol>
+<li>Different coil have different distribution of sensitivity;</li>
+<li>Ravelling was shown due to undersampling.</li>
+</ol>
+<p>If \(g=3\), the derived image looks like this:</p>
+<p><img src="http://www.z4a.net/images/2016/09/20/Third_Sample.jpg" alt="Third_Sample.jpg"></p>
+<h3 id="Deriving-Sensitivity-Map"><a href="#Deriving-Sensitivity-Map" class="headerlink" title="Deriving Sensitivity Map"></a>Deriving Sensitivity Map</h3><p>As mentioned before, we need the sensitivity array \(C\) of each coil to unfold the matrix. In practice we could perform a preliminary test on the coils to get the sensitivity map, but in this project we didn’t have such data and could only derive such map by comparing the fully-sampled image with the “Sum of Square” image as followed:</p>
+<p><img src="http://www.z4a.net/images/2016/09/20/sensitivity.jpg" alt="sensitivity.jpg"></p>
+<h3 id="Unfolding"><a href="#Unfolding" class="headerlink" title="Unfolding"></a>Unfolding</h3><p>Using the unfolding formula in Matlab we could derive the unfolded image from the undersampled data of 8 coils, shown as followed:</p>
+<p><img src="http://www.z4a.net/images/2016/09/20/result.jpg" alt="result.jpg"></p>
+<p>Caculating the \(g\)-factor of the image according to the formula:</p>
+<p>$$g=\sqrt{[(C_R^ * \Psi^{-1}C<em>R)^{-1}]</em>{p,p}(C_F\Psi^{-1}C_F)}$$</p>
+<p>The corresponding \(g\)-factor map is shown as followed:</p>
+<p><img src="http://www.z4a.net/images/2016/09/20/compare.jpg" alt="compare.jpg"></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li>Pruessmann, Klaas P., Markus Weiger, Markus B. Scheidegger, and Peter Boesiger. “SENSE: sensitivity encoding for fast MRI.” Magnetic resonance in medicine 42, no. 5 (1999): 952-962.</li>
+</ul>
+
       
     </div>
     
     <div>
       
+        
+      
     </div>
 
     <div>
+      
+        
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/Image-Processing/" rel="tag">#Image Processing</a>
+          
+            <a href="/tags/MRI/" rel="tag">#MRI</a>
+          
+        </div>
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/01/16/Three dimensional medical image rendering/" rel="prev" title="Three dimensional medical image rendering">
+                Three dimensional medical image rendering <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -437,6 +392,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -456,8 +415,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://cdn.physorg.com/newman/gfx/news/hires/2-growingnanow.jpg"
@@ -500,6 +468,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Basics"><span class="nav-number">1.</span> <span class="nav-text">Basics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Experimental"><span class="nav-number">2.</span> <span class="nav-text">Experimental</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Full-Sampling-and-Undersampling"><span class="nav-number">2.1.</span> <span class="nav-text">Full Sampling and Undersampling</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deriving-Sensitivity-Map"><span class="nav-number">2.2.</span> <span class="nav-text">Deriving Sensitivity Map</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unfolding"><span class="nav-number">2.3.</span> <span class="nav-text">Unfolding</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">3.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -603,6 +582,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
